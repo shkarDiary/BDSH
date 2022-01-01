@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+.list {
+    color: dodgerblue;
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* navigation bar */
+
+.nav {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    margin: auto 10px;
+}
+
+.nav__item {
+    padding: 0.5 2rem;
+    margin-right: 50px;
+    font-size: 15px;
+}
+
+.nav__image {
+    margin: 10px 0 0 80px;
+    width: 50px;
+}
+
+.nav__item>a {
+    color: #787879;
+    transition: color 0.3s;
+}
+
+.nav__item>a:hover {
+    color: #ddd;
+}
+
+.nav__item .btn {
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: #cb46d3;
+    color: #fff;
+}
+
+
+/* Header */
+
+.header {
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block--skewed-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient( 90deg, #7250d5 0, #aa47a5 50%, #f43a67 99%);
+    text-align: center;
+    padding-bottom: 30rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 96%);
+}
+
+.block--skewed-left h1 {
+    margin-top: 80px;
+    color: #fff;
+    line-height: 51px;
+    font-weight: 600;
+    font-size: 44px;
+}
+
+.images--block {
+    width: 700px;
+    position: relative;
+    z-index: 2;
+    margin: -270px auto 0 auto;
+    border: 3px solid #fff;
+}
+
+.intro {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.intro h2 {
+    color: #211c51;
+}
+
+.list--grid {
+    width: 700px;
+    margin: 40px auto;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.fact {
+    color: #c3ad;
+    justify-content: space-between;
+    font-size: 4rem;
+    display: block;
+}
+
+.block--skewed-left-white {
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 5rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 96%);
+}
